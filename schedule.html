@@ -10,7 +10,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
   <style>
 
   h3 {
@@ -120,47 +119,6 @@ body {
 
 
 }
-input[type=text], select {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-input[type=number], select {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-input[type=email], select {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-input[type=submit] {
-  width: 100%;
-  background-color: #f863c3;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: #45a049;
-}
 </style>
   <body>
     <center>
@@ -193,98 +151,15 @@ input[type=submit]:hover {
       <center>
       <!-- About Section -->
       <div class="w3-container w3-padding-32 w3-center">
-        <h3>Schedule An Appointment Today</h3><br>
-  <img src="lotus_flower_PNG16.png" alt="logo" width="6%;" height="5%;">
-<br>
-<br>
-<br>
+        <h3>Schedule Your Appointment Now!</h3><br>
 
-        <div>
-    <label for="name">Name</label>
-    <input type="text" id="name" name="firstname" placeholder="Your name..">
-
-    <label for="phone">Phone Number</label>
-    <input type="number" id="phone" name="phone" placeholder="Your phone number..">
-    <label for="email">Email</label>
-    <input type="email" id="email" name="email" placeholder="Your email..">
-    <label for="country">Type of service</label>
-    <select id="country" name="country">
-      <option value="rolita">Facial: $55.00</option>
-      <option value="brenda">Massage: $100.00</option>
-      <option value="brenda">Both: $155.00</option>
-
-    </select>
-<br>
-<br>
-    <label for="staff">Staff Member</label>
-    <select id="staff" name="staff">
-      <option value="rolita">Rolita</option>
-      <option value="brenda">Brenda</option>
-    </select>
-    <label for="name">Month</label>
-    <select id="month" name="month" style="width:13%;">
-      <option value="January">January</option>
-      <option value="February">February</option>
-      <option value="March">March</option>
-      <option value="April">April</option>
-      <option value="May">May</option>
-      <option value="June">June</option>
-      <option value="July">July</option>
-      <option value="August">August</option>
-      <option value="September">September</option>
-      <option value="October">October</option>
-      <option value="November">November</option>
-      <option value="December">December</option>
-    </select>
-        <label for="name">Day</label>
-        <select id="days" name="days" style="width:7%;">
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-          <option value="8">8</option>
-          <option value="9">9</option>
-          <option value="19">10</option>
-          <option value="11">11</option>
-          <option value="12">12</option>
-          <option value="13">13</option>
-          <option value="14">14</option>
-          <option value="15">15</option>
-          <option value="16">16</option>
-          <option value="17">17</option>
-          <option value="18">18</option>
-          <option value="19">19</option>
-          <option value="20">20</option>
-          <option value="21">21</option>
-          <option value="22">22</option>
-          <option value="23">23</option>
-          <option value="24">24</option>
-          <option value="25">25</option>
-          <option value="26">26</option>
-          <option value="27">27</option>
-          <option value="28">28</option>
-          <option value="29">29</option>
-          <option value="30">30</option>
-          <option value="31">31</option>
-        </select>
-            <label for="name">Time</label>
-            <select id="times" name="times" style="width:40%;">
-              <option id="time" value="$55.00">Facial Treatment Booking: 9:30am-10:30am. Duration: 1 hour.</option>
-              <option id="time"value="$100.00">Massage Booking: 9:45am-11:15am. Duration: 1 hour and 30 minutes.</option>
-              <option id="time"value="$55.00">Facial Treatment Booking: 11:00am-12:00pm. Duration: 1 hour.</option>
-              <option id="time"value="$100.00">Massage Booking: 11:15am-12:45pm. Duration: 1 hour and 30 minutes.</option>
-              <option id="time" value="$55.00">Facial Treatment Booking: 1:30pm-2:30pm. Duration: 1 hour.</option>
-              <option id="time"value="$100.00">Massage Booking: 1:45pm-2:25pm. Duration: 1 hour and 30 minutes.</option>
-              <option id="time"value="$55.00">Facial Treatment Booking: 2:30pm-3:30pm. Duration: 1 hour.</option>
-              <option id="time"value="$100.00">Massage Booking: 2:25pm-4:00pm. Duration: 1 hour and 30 minutes.</option>
-              <option id="time"value="$155.00">Facial and Massage Booking: 4:30pm-7:00pm. Duration:2 hours and 30 minutes</option>
-            </select>
-                <button onclick="setApp()">Book Appointment</button>
-</div>
-<p id="app">hoj</p>
+        <div class="w3-padding-32">
+          <br>
+<p>Congratulations on coming this far. You have successfully decided on the service you want, along with the staff.</p>
+<p>In order to continue please click on the link below to start scheduling your appointment. You must sign up first, before making your appointment.</p>
+ <a href="https://www.supersaas.com/schedule/TiaraLoftin/Rolita">Schedule your appointment now</a>
+        </div>
+      </div>
       </center>
   </body>
   <br>
@@ -301,9 +176,4 @@ input[type=submit]:hover {
 </nav>
 </center>
   </footer>
-  <script>
-  function setApp(){
-    document.getElementById("app").innerHTML="Congratulations "+document.getElementById("name").value+" on booking your appointment at the Promise Land Spa. Your appoint will be on "+document.getElementById("month").value+" "+document.getElementById("days").value+" for the "+document.getElementById("time").innerHTML+" service and the total cost of the service will be "+document.getElementById("times").value+". A confirmation email has been sent to your confirmed email address at "+document.getElementById("email").value+".";
-  }
-  </script>
 </html>
