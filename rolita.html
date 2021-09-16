@@ -1,0 +1,260 @@
+<html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Promise Land Spa</title>
+  </head>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+
+  h3 {
+  font-family: "Snell Roundhand", Times, serif;
+}
+  h4 {
+  font-family: "Snell Roundhand", Times, serif;
+}
+  h2{
+  font-family: "Snell Roundhand", Times, serif;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  background-color: #f863c3;
+  color:#b7f68b;
+}
+
+.topnav a {
+  color: white;
+  margin-left: 160px;
+  text-align: center;
+  padding: 24px 16px;
+  text-decoration: none;
+  font-size: 17px;
+
+}
+
+.topnav a:hover {
+  color: #b7f68b;
+}
+
+.topnav a.active {
+  color: #b7f68b;
+}
+
+.navbar {
+  overflow: hidden;
+  color:white;
+  background-color: #f863c3;
+  bottom: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+
+}
+
+
+.main {
+  padding: 16px;
+  margin-bottom: 30px;
+}
+@keyframes example {
+  5%   {background-color:transparent; left:500px; top:0px;}
+  25%  {background-color:transparent; left:-500px; top:0px;}
+
+}
+.dropbtn {
+  background-color: #f863c3;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  left: 60px;
+  display: inline-block;
+}
+
+.dropdown-content {
+  background-color: white;
+  display: none;
+  position: absolute;
+  width: 140px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  position: relative;
+  right: 130px;
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #f863c3;
+  color: #b7f68b;
+
+
+}
+.month {
+  padding: 20px 25px;
+  width: 100%;
+  background: #f863c3;
+  text-align: center;
+}
+
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color: #ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: black;
+  text-align: center;
+}
+
+.days {
+  padding: 60px 0;
+  background: #eee;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:22px;
+  color: black;
+}
+
+.days li .active {
+  padding: 5px;
+  background: #f863c3;
+  color: white !important
+}
+.available{
+color:red;
+}
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+  .weekdays li, .days li {width: 13.1%;}
+}
+
+@media screen and (max-width: 420px) {
+  .weekdays li, .days li {width: 12.5%;}
+  .days li .active {padding: 2px;}
+}
+
+@media screen and (max-width: 290px) {
+  .weekdays li, .days li {width: 12.2%;}
+}
+</style>
+  <body>
+    <center>
+    <a class="active" href="index.html"><img src="promiselandspalogo.png" alt="logo" width="16%;" height="20%;"></a>
+    <h2>Find peace and happiness at the Promise Land Spa.</h2>
+    <img src="Social-Icons-01-Free-SVG.png" alt="logo" width="10%;" height="3%;" style="float:right;">
+    <br>
+    <br>
+  </center>
+      <nav style=" position:relative; top:-14px;width:100%;">
+      <div class="topnav">
+  <a href="contact.html">Contact</a>
+  <div class="dropdown">
+  <button class="dropbtn">Services</button>
+  <div class="dropdown-content">
+  <a href="facial.html">Facial</a>
+  <a href="massage.html">Massages</a>
+  </div>
+</div>
+  <div class="dropdown">
+  <button class="dropbtn">Meet our Team</button>
+  <div class="dropdown-content">
+  <a href="rolita.html">Rolita</a>
+  <a href="brenda.html">Brenda</a>
+  </div>
+</div>
+  <a href="schedule.htm">Schedule an Appointment</a>
+</div>
+      </nav>
+      <center>
+      <!-- About Section -->
+      <div class="w3-container w3-padding-32 w3-center">
+        <h3>Meet Rolita</h3><br>
+        <img src="online-massage.png" alt="Me" class="w3-image" style="display:block;margin:auto; border-color: black; border-style: solid; border-width: 2px;" width="800" height="533">
+        <div class="w3-padding-32">
+          <p>Rolita specializes in facials, and has worked for Promise Land Spa for over 3 years now.</p>
+        </p>She has been certified for massage therapy from her local massage school for over 4 years. She is available Monday through Saturday between the hours of 10:00 am to 9:00 pm.</p>
+<p>Rolita's services includes deep cleansing of the skin and pores, exfoliation of dead skin cells, and hydration and moisturizing of the skin.</p>
+<p>Click the link below if you like Rolita's Service</p>
+<a href="https://www.supersaas.com/schedule/TiaraLoftin/Rolita">Schedule an appointment with Rolita</p>
+        </div>
+      </div>
+
+      </center>
+  </body>
+  <br>
+  <br>
+  <br>
+  <footer>
+    <nav style=" position:relative; top:-14px;">
+      <center>
+    <div class="navbar" >
+      <a><i class="fa fa-copyright"></i> 2021 All Rights Reserved | </a>
+<a> Promise Land Spa | </a>
+<a> Designed and Developed by: Tiara Loftin</a>
+</div>
+</nav>
+</center>
+  </footer>
+</html>

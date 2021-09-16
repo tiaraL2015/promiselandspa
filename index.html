@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Promise Land Spa</title>
+  </head>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="promiselandtestimonial.js"></script>
+  <style>
+
+  h3 {
+  font-family: "Snell Roundhand", Times, serif;
+}
+  h4 {
+  font-family: "Snell Roundhand", Times, serif;
+}
+  h2{
+  font-family: "Snell Roundhand", Times, serif;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  background-color: #f863c3;
+  color:#b7f68b;
+}
+
+.topnav a {
+  color: white;
+  margin-left: 160px;
+  text-align: center;
+  padding: 24px 16px;
+  text-decoration: none;
+  font-size: 17px;
+
+}
+
+.topnav a:hover {
+  color: #b7f68b;
+}
+
+.topnav a.active {
+  color: #b7f68b;
+}
+
+.navbar {
+  overflow: hidden;
+  color:white;
+  background-color: #f863c3;
+  bottom: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  margin-left: 160px;
+
+}
+
+
+.main {
+  padding: 16px;
+  margin-bottom: 30px;
+}
+@keyframes example {
+  5%   {background-color:transparent; left:500px; top:0px;}
+  25%  {background-color:transparent; left:-500px; top:0px;}
+
+}
+.dropbtn {
+  background-color: #f863c3;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  left: 60px;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 140px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  display: block;
+  position: relative;
+  right: 130px;
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #f863c3;
+  color: #b7f68b;
+
+
+}
+.modal{
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #212121;
+  background-image: url("Shine-Free-PNG-Image.png");
+
+}
+.modal-content{
+  position: relative;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+</style>
+  <body onload="getAlllTestiments()">
+    <center>
+    <a class="active" href="index.html"><img src="promiselandspalogo.png" alt="logo" width="16%;" height="20%;"></a>
+    <h2>Find peace and happiness at the Promise Land Spa.</h2>
+    <img src="Social-Icons-01-Free-SVG.png" alt="logo" width="10%;" height="3%;" style="float:right;">
+    <br>
+    <br>
+</center>
+    <nav style=" position:relative; top:-14px;width:100%;">
+      <div class="topnav">
+  <a href="contact.html">Contact</a>
+  <div class="dropdown">
+  <button class="dropbtn">Services</button>
+  <div class="dropdown-content">
+  <a href="facial.html">Facial</a>
+  <a href="massage.html">Massages</a>
+  </div>
+</div>
+  <div class="dropdown">
+  <button class="dropbtn">Meet our Team</button>
+  <div class="dropdown-content">
+  <a href="rolita.html">Rolita</a>
+  <a href="brenda.html">Brenda</a>
+  </div>
+</div>
+  <a href="schedule.html">Schedule an Appointment</a>
+</div>
+      </nav>
+      <center>
+        <div class="container" style="width: 102%;position: relative; top:-17px; left:-14px;">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+      <li data-target="#myCarousel" data-slide-to="5"></li>
+      <li data-target="#myCarousel" data-slide-to="6"></li>
+
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="Body-Massage-in-Ghatkopar-Mumbai.jpg" alt="Los Angeles" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="25946948661_5e741638ef_h.jpeg" alt="Chicago" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="Man-Facial-Massage.jpg" alt="New york" style="width:100%;">
+      </div>
+      <div class="item">
+        <img src="Haven-Wellness-Center-featured.jpg" alt="New york" style="width:100%;">
+      </div>
+      <div class="item">
+        <img src="image.jpg" alt="New york" style="width:100%;">
+      </div>
+      <div class="item">
+        <img src="Woman-having-massage-in-the-spa-salon.jpg" alt="New york" style="width:100%;">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+      <div style="width: 100%; position: relative; top:-60px;">
+<br>
+<br>
+        <h2>Welcome to the Promise Land Spa.</h2>
+        <img src="lotus_flower_PNG16.png" alt="logo" width="6%;" height="5%;">
+        <br>
+        <div>
+          <h4>At the Promise Land Spa we offer a variety of services and a lotus garden for our customers to visit.</h4>
+          <h4>Explore the Promise Land and partake in our tranquil massages and facials.</h4>
+          <h4>Stop by and see our mesmorizing lotus garden, free admission.</h4>
+        </div>
+        <br>
+         <div class="w3-row-padding" style="position: relative; left:160px;">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="Man-Facial-Massage.jpeg" alt="John" style="width:100%">
+      <h3 style="font-family: "Snell Roundhand", Times, serif;">Facial Service</h3>
+      <p>Try our facial services that features a facial massage, and exfoliation of the skin.</p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="Haven-Wellness-Center-featured.jpeg" alt="Jane" style="width:100%">
+      <h3 style="font-family: "Snell Roundhand", Times, serif;">Massage Service</h3>
+      <p>We offer a full service body massage, that will rejuvenate your body and relax your mind.</p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="unnamed.jpeg" alt="Mike" style="width:100%">
+      <h3 style="font-family: "Snell Roundhand", Times, serif;">Promise Land Lotus Garden</h3>
+      <p>Take a walk through our indoor lotus garden, free of charge. </p>
+    </div>
+  </div>
+      </div>
+      <div style="background-color:#e6e6e6; width: 100%; position: relative; top:-80px;">
+<br>
+        <h3>See What Other's Are Saying About InterviewPrep.</h3>
+        <br>
+        <div>
+          <h4 class="a" style="margin-left:40px;"><font color="#f863c3" size="6">Testimonials</font></h4>
+<div class="container">
+  <div id="myCarousel3" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators" id="test2" style="display:none;">
+      <li data-target="#myCarousel3" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel3" data-slide-to="1"></li>
+      <li data-target="#myCarousel3" data-slide-to="2"></li>
+    </ol>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" id="test">
+  <p class="item active">"I love the facial service of Rolita. It was very refreshing!"<br>~Toya Jacobs~</p>
+  <p class="item">"I highly recommend Brenda for your massage. She is really good and really tended to my muscles"<br>~Toya Jacobs~</p>
+  <p class="item">"Me and my family really loved the lotus garden!"<br>~Tiarra Headen~</p>
+    </div>
+  </div>
+</div>
+<button id="testiment" onclick="document.getElementById('id01').style.display='block';" style="background-color:#f863c3; color:white;">Create Testimonial</button>
+        </div>
+        <div id="id01" class="modal">
+          <form class="modal-content animate" action=""style="background-image: url('1.jpeg');">
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+              <img src="lotus_flower_PNG16.png" alt="Avatar" class="avatar" style="width:20%; height:20%;">
+              <h4 style="color:#b7f68b;">Create A Magical Moments Testimonial</h4>
+            </div>
+            <div class="container">
+              <label for="name" style="color:#b7f68b;"><b>Name:</b></label>
+              <input type="text" id="personName" placeholder="Enter Name" name="name" required>
+              <label for="tstmnt" style="color:#b7f68b;"><b>Testiment:</b></label>
+              <br>
+              <p style="color:#b7f68b;">Note: Testiment must be in quotations.</p>
+              <textarea id="testimonial" placeholder="Enter Testiment" name="tstmnt" required rows="4" cols="50">
+</textarea>
+              <center>
+              <button type="submit" onclick="addTestimonial()">Submit</button>
+              <br>
+            </center>
+            </div>
+      </div>
+    </div>
+      <!-- Photo grid (modal) -->
+<div class="w3-row-padding">
+<div class="w3-half">
+  <img src="Man-Facial-Massage.jpeg" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
+  <img src="Haven-Wellness-Center-featured.jpeg" style="width:100%" onclick="onClick(this)" alt="Light, white and tight scandinavian design">
+  <img src="Body-Massage-in-Ghatkopar-Mumbai.jpeg" style="width:100%" onclick="onClick(this)" alt="White walls with designer chairs">
+  <img src="download.jpeg" style="width:100%" onclick="onClick(this)" alt="White walls with designer chairs">
+  <img src="Hot+Stone.jpeg" style="width:100%" onclick="onClick(this)" alt="White walls with designer chairs">
+  <img src="iStock_000014398295XSmall_grande.jpeg" style="width:100%" onclick="onClick(this)" alt="White walls with designer chairs">
+  <img src="Sports-vs-Deep-Tissue-Massage-at-Bend-Total-Body-Chiropractic-Massage-1.jpeg" style="width:100%; height:90%;" onclick="onClick(this)" alt="White walls with designer chairs">
+
+</div>
+
+<div class="w3-half">
+  <img src="woman_receiving_massage.jpeg" style="width:100%" onclick="onClick(this)" alt="Windows for the atrium">
+  <img src="10-Amazing-Benefits-Of-Oxygen-Facial-For-Glowing-Skin.jpeg" style="width:100%" onclick="onClick(this)" alt="Bedroom and office in one space">
+  <img src="customized-facial.jpeg" style="width:100%" onclick="onClick(this)" alt="Scandinavian design">
+  <img src="fullsizeoutput_dcd-1080x675.jpeg" style="width:100%" onclick="onClick(this)" alt="Scandinavian design">
+  <img src="HotStoneMassage.jpeg" style="width:100%" onclick="onClick(this)" alt="Scandinavian design">
+  <img src="laing-li-micro-lotus.jpeg" style="width:100%" onclick="onClick(this)" alt="Scandinavian design">
+  <img src="therapist-applying-face-mask-to-man-royalty-free-image-609094134-1547225313.jpeg" style="width:100%" onclick="onClick(this)" alt="Scandinavian design">
+
+</div>
+</div>
+      </center>
+  </body>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <footer>
+    <nav style=" position:relative; top:-14px;">
+      <center>
+    <div class="navbar">
+      <a><i class="fa fa-copyright"></i> 2021 All Rights Reserved</a>
+<a>Promise Land Spa</a>
+<a>Designed and Developed by: Tiara Loftin</a>
+</div>
+</nav>
+</center>
+  </footer>
+  <script src="https://www.gstatic.com/firebasejs/5.11.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDeeaz43g7wl2Kd0E780KXfc7A1ugK7S8s",
+    authDomain: "promiselandspa.firebaseapp.com",
+    databaseURL: "https://promiselandspa-default-rtdb.firebaseio.com",
+    projectId: "promiselandspa",
+    storageBucket: "promiselandspa.appspot.com",
+    messagingSenderId: "325799144894"
+  };
+  firebase.initializeApp(config);
+  var database = firebase.database();
+  var newUserKey = database.ref().child('users').push().key;
+</script>
+</html>
